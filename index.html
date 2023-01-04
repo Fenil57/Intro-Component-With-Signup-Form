@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Intro Component with Signup Form</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <section class="content">
+          <h1 class="content__title">Learn to code by watching others</h1>
+          <p class="content__sub-title">
+            See hoe experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </section>
+
+        <section class="cta">
+          <p class="cta__btn cta__btn--blue">
+            Try it free 7 days <span> then $20/mo. thereafter</span>
+          </p>
+
+          <form class="cta__form">
+            <div class="cta__form--wrapper">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="firstname"
+                required
+              />
+              <span class="cta__error">First Name cannot be empty</span>
+              <img src="img/icon-error.svg" alt="error img" />
+            </div>
+
+            <div class="cta__form--wrapper">
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="lastname"
+                required
+              />
+              <span class="cta__error">Last Name cannot be empty</span>
+              <img src="img/icon-error.svg" alt="error img" />
+            </div>
+
+            <div class="cta__form--wrapper">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="email"
+                required
+              />
+              <span class="cta__error">Looks like this is not an email</span>
+              <img src="img/icon-error.svg" alt="error img" />
+            </div>
+
+            <div class="cta__form--wrapper">
+              <input
+                type="password"
+                placeholder="Password required"
+                class="password"
+                required
+              />
+              <span class="cta__error">Password cannot be empty</span>
+              <img src="img/icon-error.svg" alt="error img" />
+            </div>
+
+            <button class="cta__btn cta__btn--green">
+              Claim your free trial
+            </button>
+
+            <p class="cta__form--terms">
+              By clicking the button you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
